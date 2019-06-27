@@ -87,6 +87,8 @@
     
         // Download the image
         [cell.photoView setImageWithURL:url];
+        
+        cell.dateLabel.text = post[@"date"];
     }
     
     return cell;
